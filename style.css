@@ -1,0 +1,651 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Forum", serif;
+    font-style: normal;
+}
+ul{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+
+header{
+    height: 100vh;
+    background: url(images.png) center center/cover no-repeat;
+    position: relative;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar h1{
+    width: 80px;
+    margin-left: 100px;
+    color: white;
+    margin-top: 20px;
+}
+
+#navbar ul {
+    display: flex;
+    margin-right: 100px;
+    margin-top: 20px;
+}
+
+#navbar ul li a{
+    padding: 15px 20px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#navbar ul li a:hover{
+    border-bottom: 2px solid #e4b95b;
+}
+header .content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+}
+header .content h1{
+    font-size: 40px;
+    color: white;
+}
+header .content p{
+    color: white;
+    margin: 15px 0;
+    font-size: 20px;
+}
+.primary-text{
+    color:#e4b95b;
+    font-size: 40px;
+    font-weight: bold;
+}
+.secodry-text{
+    color: #e4b95b;
+    font-size: 20px;
+    font-weight: bold;
+}
+.btn{
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+    transition: 0.3s ease;
+}
+.btn-primary{
+    color: #e4b95b;
+    border: 3px solid white;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+.btn-primary:hover{
+    background: yellow;
+    color: black;
+}
+
+/*about*/
+
+#about{
+    height:80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f4f4f4;
+}
+
+#about .title{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+#about h2{
+    font-size: 40px;
+    color: #383848;
+    margin-bottom: 20px;
+}
+
+#about .title p {
+    font-size: 14px;
+    color: #9a9a9a;
+    font-weight: bold;
+}
+
+#about .about-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+#about .about-content img{
+    width: 450px;
+}
+
+#about .about-content p{
+    color: #9a9a9a;
+    margin-right: 7rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+.btn-secondary{
+    color: black;
+    border: 1px solid black;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    margin-top: 20px;
+}
+.btn-secondary:hover{
+    background: yellow;
+    color: black;
+}
+
+/*men*/
+
+#men {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    background:black;
+}
+#men .title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+#men h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #e4b95b;
+}
+#men .title p{
+    color: white;
+    font-weight: 500;
+}
+
+#men .offers-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+#men .offers-item img{
+    width: 200px;
+}
+#men .offers-item h3{
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+#men .offers-item p{
+    font-size: 14px;
+    padding: 0 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+#men .offers-item span{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+/*women*/
+
+#women {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    background:white;
+}
+#women .title {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+#women h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #e4b95b;
+}
+#women .title p{
+    color: black;
+    font-weight: 500;
+}
+
+#women .offers-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+}
+
+#women .offers-item img{
+    width: 200px;
+    border-radius: 50%;
+}
+#women .offers-item h3{
+    font-size: 25px;
+    margin: 15px 0;
+}
+
+#women .offers-item p{
+    font-size: 14px;
+    padding: 0 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+#women .offers-item span{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+/* contact */
+
+#contact {
+    padding: 5rem 0;
+    background: #f4f4f4;
+}
+
+#contact .container{
+    max-width: 900px;
+}
+#contact .contact-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#contact .contact-content .contact-info{
+    width: 50%;
+}
+#contact .contact-content .contact-info div{
+    margin: 30px 0;
+    line-height: 1.7;
+}
+
+#contact .contact-content .contact-info h3{
+    font-size: 28px;
+    color: #383848;
+    margin-bottom: 10px;
+}
+#contact .contact-content .contact-info p {
+    color: #9a9a9a;
+}
+#contact .contact-content .contact-info i {
+    color:#e4b95b ;
+    margin-right: 5px;
+}
+#contact .contact-content .contact-info a i {
+    color: white;
+    background: #383848;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: 0.3s ease;
+}
+#contact .contact-content .contact-info a i:hover{
+    background: #e4b95b;
+    color: #383848;
+}
+
+form {
+    width: 50%;
+}
+form input,
+textarea{
+    display: block;
+    width: 100%;
+    padding: 20px 15px;
+    margin: 20px 0;
+    border: none;
+    background-color: #e3e2dd;
+}
+
+#contact .btn {
+    background: #e4b95b;
+    color: white;
+    cursor: pointer;
+}
+
+#contact .btn:hover{
+    background-color: #383848;
+}
+
+/* footer */
+
+#footer {
+    background: #383848;
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+    font-size: 14px;
+}
+#footer a{
+    color: white;
+}
+
+/* scroll */
+
+#scrollBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border: 2px solid #333;
+    cursor: pointer;
+    z-index: 1000;
+    display: none;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+
+}
+
+#scrollBtn::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    border-top: 2px solid #333;
+    border-left: 2px solid #333;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* media */
+
+@media (max-width: 992px) {
+    header{
+        height: 55vh;
+        width: 100%;
+}
+    header .content h1 {
+    font-size: 32px;
+}
+    header .content p {
+    font-size: 18px;
+}
+    #navbar {
+    flex-direction: column;
+    margin: auto;
+}
+    #navbar h1 {
+    margin: 10px 0;
+}
+    #navbar ul {
+    flex-direction: column;
+    margin: 0;
+    text-align: center;
+}
+    #navbar ul li {
+    margin: 5px 0;
+}
+.content{
+    flex-direction: column;
+    text-align: center;
+}
+.content h1 , span , p{
+    font-size: 18px;
+    width: 400px;
+} 
+.content .btn-primary{
+    margin-top: 10px;
+}
+#about{
+    flex-direction: column;
+    height: 80vh;
+    margin: auto;   
+}
+#about .title h2{
+    font-size: 27px;
+    margin: auto;
+}
+#about .title p {
+    font-size: 18px;
+    margin: auto;
+    margin-top: 10px;
+}
+#about .about-content{
+    flex-direction: column;
+    text-align: center;
+}
+#about .about-content p{
+    margin: auto;
+}
+#men {
+    height: 100vh;
+    flex-direction: column;
+}
+#men .container{
+    flex-direction: column;
+}
+#men .title h2 , p{
+    margin: auto;    
+    text-align: center;
+    margin-top: 5px;
+}
+#men .title p{
+    margin-top: 10px;
+}
+#men .container .offers-item{
+    flex-direction: column;
+}
+#women {
+    height: 100vh;
+    flex-direction: column;
+}
+#women .container{
+    flex-direction: column;
+}
+#women .title h2 , p{
+    margin: auto;    
+    text-align: center;
+    margin-top: 5px;
+}
+#women .title p{
+    margin-top: 10px;
+}
+#women .container .offers-item{
+    flex-direction: column;
+}
+#contact {
+    height: 58vh;
+    width: 100%;
+}
+#contact .contact-info{
+    justify-content: space-between;
+}
+#contact .contact-info .left{
+    width: 50%;
+    text-align: center;
+    
+}
+#contact .contact-info .cont{
+    width: 50%;
+    text-align: center;
+    
+}
+#contact .contact-info .left {
+    flex-direction: column;
+    text-align: left;
+    margin-left: 20px;
+}
+#contact .contact-info .left h3{
+    margin-left: 20px;
+}
+#contact .contact-info .left p , a {
+    text-align: left;
+    margin-left: 10px;
+}
+}
+@media (max-width: 576px) {
+  /* الهيدر */
+  header {
+    height: 70vh; /* زودنا الارتفاع */
+  }
+
+  header .content h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+  header .content p {
+    font-size: 14px;
+  }
+
+  /* النافبار */
+  #navbar h1 {
+    font-size: 20px;
+  }
+
+  #navbar ul{
+    text-align: center;
+    margin-right: 25px;
+  }
+
+  #navbar ul li a {
+    font-size: 16px;
+  }
+
+  /* الهيرو */
+  .content h1,
+  .content span,
+  .content p {
+    font-size: 16px;
+    width: 90%;
+  }
+
+  /* الأزرار */
+  .btn-primary {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  /* about */
+  #about {
+    height: auto;
+    padding: 30px 0;
+  }
+
+  #about .title h2 {
+    font-size: 24px;
+  }
+
+  #about .title p {
+    font-size: 14px;
+  }
+
+  #about .about-content img {
+    width: 90%;
+    margin: auto;
+}
+
+  #about .about-content p {
+    font-size: 14px;
+    margin: 20px 0;
+    padding: 0 10px;
+  }
+
+  /* men */
+  #men {
+    height: auto;
+    padding: 30px 0;
+  }
+
+  #men .title h2 {
+    font-size: 24px;
+  }
+
+  #men .title p {
+    font-size: 14px;
+  }
+
+  #men .offers-item img {
+    width: 150px;
+  }
+
+  /* women */
+  #women {
+    height: auto;
+    padding: 30px 0;
+  }
+
+  #women .title h2 {
+    font-size: 24px;
+  }
+
+  #women .title p {
+    font-size: 14px;
+  }
+
+  #women .offers-item img {
+    width: 150px;
+  }
+
+  /* contact */
+  #contact {
+    height: auto;
+    padding: 30px 0;
+  }
+
+  #contact .contact-info {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #contact .contact-info .left,
+  #contact .contact-info .cont {
+    width: 90%;
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  #contact .contact-info .left h3 {
+    margin-left: 0;
+    font-size: 20px;
+  }
+
+  #contact .contact-info .left p,
+  #contact .contact-info .left a {
+    text-align: left;
+    margin-left: 15px;
+    font-size: 14px;
+  }
+
+  /* أيقونات الكونتاكت */
+  #contact .contact-info a i {
+    font-size: 7px; /* صغرنا الأيقونة */
+    padding: 10px;   /* قللنا البادينج */
+  }
+
+  /* الفوتر */
+  #footer {
+    font-size: 6px; /* صغر الخط */
+    padding: 10px 0;
+  }
+}
